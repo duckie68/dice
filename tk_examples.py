@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 
 from tkinter import *
+# import tkinter.messagebox
 
-
-class TwoButtons:
+"""class TwoButtons:
 
     def __init__(self, master):
         frame = Frame(master)
@@ -19,9 +19,17 @@ class TwoButtons:
         print('Hot damn!  This actually worked!')
 
 def doNothing():
-    print("Okay, okay, I won't")
+    print("Okay, okay, I won't")"""
 
 root = Tk()
+
+"""tkinter.messagebox.showinfo('WindowTitle', 'A blurb of text')
+
+answer = tkinter.messagebox.askquestion('Question one', 'Do you like spam?')
+
+if answer == 'yes':
+    print('SPAM ' * 8)
+
 
 buttons = TwoButtons(root)
 
@@ -48,7 +56,21 @@ printButt.pack(side=LEFT, padx=2, pady=2)
 
 toolbar.pack(side=TOP, fill=X)
 
-status = Label(root, text="Preparing to do nothing...", bd=1, relief=SUNKEN, anchor=W)
-status.pack(side=BOTTOM, fill=X)
+# canvas = Canvas(root, width=640, height=480)
+# canvas.pack()
+
+# blackLine = canvas.create_line(0, 0, 200, 50)
+# redLine = canvas.create_line(0, 100, 600, 60, fill='red')
+# greenBox = canvas.create_rectangle(20, 20, 60, 100, fill='green')
+
+# canvas.delete(blackLine)
+# canvas.delete(ALL)"""
+
+photo = PhotoImage(file='headshot1.png')
+label = Label(root, image=photo)
+label.pack()
+
+"""status = Label(root, text="Preparing to do nothing...", bd=1, relief=SUNKEN, anchor=W)
+status.pack(side=BOTTOM, fill=X)"""
 
 root.mainloop()
